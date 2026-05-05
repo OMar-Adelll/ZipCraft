@@ -85,7 +85,7 @@ Replaces repeated substrings with references to previous occurrences using a sli
 
 ### 🖼️ LZ77 Example
 
-![alt text](image.png)
+![alt text](./media/image.png)
 
 The image should show:
 
