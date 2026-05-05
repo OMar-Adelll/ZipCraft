@@ -67,7 +67,7 @@ vector<TAG> compression(const string &s)
         }
         else
         {
-            char nxt = (i + len < n ? s[i + len] : '\0');
+            char nxt = (i + len < n ? s[i + len] : '!');
             tags.push_back({prv, len, nxt});
             i += len + 1;
         }
@@ -95,7 +95,7 @@ string decompression(const vector<TAG> &tags)
             for (int j = 0; j < len; j++)
                 ans += ans[st + j];
 
-            if (nxt != '\0')
+            if(nxt != '!')
                 ans += nxt;
         }
     }
