@@ -110,8 +110,9 @@ int main()
     getline(cin, s);
     vector<TAG> ans = compression(s);
     for (int i = 0; i < sz(ans); i++)
-        cout << "< " << ans[i].prv << " , " << ans[i].len << " , " << ans[i].nxt << " >" << " ";
+        cout << "<" << ans[i].prv << "," << ans[i].len << "," << ans[i].nxt << ">" << " ";
 
+    cout << nl;
     cout << decompression(ans) << nl;
 
     return 0;
