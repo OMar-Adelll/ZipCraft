@@ -109,11 +109,12 @@ int main()
     string s;
     getline(cin, s);
     vector<TAG> ans = compression(s);
+    cout << "Compression TAGs: " << nl;
     for (int i = 0; i < sz(ans); i++)
-        cout << "<" << ans[i].prv << "," << ans[i].len << "," << ans[i].nxt << ">" << " ";
+        cout << "<" << ans[i].prv << "," << ans[i].len << "," << ans[i].nxt << ">" << nl;
 
     cout << nl;
-    cout << decompression(ans) << nl;
+    cout << "Decompression: " << decompression(ans) << nl;
 
     return 0;
 }
