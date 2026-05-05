@@ -47,7 +47,9 @@ int main()
 {
     string s;
     getline(cin, s);
-    cout << suppress_repetition(s) << nl;
+
+    string ans = suppress_repetition(s);
+    cout << "Simple Repetition Suppression: " << ans << nl;
 
     return 0;
 }
