@@ -73,8 +73,10 @@ int main()
 {
     string s;
     getline(cin, s);
-    cout << compression(s) << nl;
-    cout << decompression(compression(s)) << nl;
+
+    string compressed = compression(s);
+    cout << "Compressed: " << compressed << nl;
+    cout << "Decompressed: " << decompression(compressed) << nl;
 
     return 0;
 }
